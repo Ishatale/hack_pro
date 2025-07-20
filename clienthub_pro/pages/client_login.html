@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Login - ClientHub Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fclienthub3439back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2563EB" stroke-width="1"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)"/>
+        </svg>
+    </div>
+
+    <!-- Main Container -->
+    <div class="relative min-h-screen flex items-center justify-center px-4 py-12">
+        <div class="w-full max-w-md">
+            <!-- Logo and Branding -->
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-600 rounded-xl mb-4 shadow-elevation-2">
+                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h1 class="text-3xl font-bold text-slate-800 mb-2">ClientHub Pro</h1>
+                <p class="text-slate-600">Secure IT Service Management Platform</p>
+            </div>
+
+            <!-- Login Form Card -->
+            <div class="card p-8 shadow-elevation-3 border border-slate-200">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-semibold text-slate-800 mb-2">Welcome Back</h2>
+                    <p class="text-slate-600">Sign in to access your project dashboard</p>
+                </div>
+
+                <form id="loginForm" class="space-y-6">
+                    <!-- Email Field -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-slate-700 mb-2">
+                            Email Address
+                        </label>
+                        <div class="relative">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-150 pl-11" placeholder="Enter your email address" required />
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <svg class="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div id="emailError" class="hidden mt-1 text-sm text-error-600"></div>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-slate-700 mb-2">
+                            Password
+                        </label>
+                        <div class="relative">
+                            <input type="password" id="password" name="password" class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-150 pl-11 pr-11" placeholder="Enter your password" required />
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <svg class="h-5 w-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                            </div>
+                            <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <svg id="eyeIcon" class="h-5 w-5 text-slate-400 hover:text-slate-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="passwordError" class="hidden mt-1 text-sm text-error-600"></div>
+                    </div>
+
+                    <!-- Remember Me and Forgot Password -->
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input id="remember" name="remember" type="checkbox" class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-slate-300 rounded" />
+                            <label for="remember" class="ml-2 block text-sm text-slate-700">
+                                Remember me
+                            </label>
+                        </div>
+                        <a href="javascript:void(0)" class="text-sm text-primary-600 hover:text-primary-700 font-medium transition-colors">
+                            Forgot password?
+                        </a>
+                    </div>
+
+                    <!-- Sign In Button -->
+                    <button type="submit" id="signInBtn" class="w-full btn-primary py-3 text-base font-semibold rounded-lg shadow-elevation-1 hover:shadow-elevation-2 transition-all duration-150">
+                        <span id="signInText">Sign In</span>
+                        <svg id="loadingSpinner" class="hidden animate-spin ml-2 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Demo Credentials -->
+                    <div class="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                        <h4 class="text-sm font-medium text-blue-800 mb-2">Demo Credentials</h4>
+                        <div class="text-xs text-blue-700 space-y-1">
+                            <p><strong>Admin:</strong> admin@clienthub.com / admin123</p>
+                            <p><strong>Client:</strong> client@techcorp.com / client456</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Trust Signals -->
+            <div class="mt-8 text-center">
+                <div class="flex items-center justify-center space-x-6 mb-4">
+                    <!-- SSL Certificate -->
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                        </svg>
+                        <span class="text-sm text-slate-600">SSL Secured</span>
+                    </div>
+                    
+                    <!-- Data Protection -->
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM15.1 8H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                        </svg>
+                        <span class="text-sm text-slate-600">Data Protected</span>
+                    </div>
+                </div>
+                
+                <p class="text-xs text-slate-500">
+                    © 2025 ClientHub Pro. All Rights Reserved. | 
+                    <a href="javascript:void(0)" class="text-primary-600 hover:text-primary-700">Privacy Policy</a> | 
+                    <a href="javascript:void(0)" class="text-primary-600 hover:text-primary-700">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Form Functionality -->
+    <script>
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const eyeIcon = document.getElementById('eyeIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.innerHTML = `
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L3 3m6.878 6.878L21 21"/>
+                `;
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.innerHTML = `
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                `;
+            }
+        });
+
+        // Form submission handling
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const signInBtn = document.getElementById('signInBtn');
+            const signInText = document.getElementById('signInText');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            
+            // Clear previous errors
+            document.getElementById('emailError').classList.add('hidden');
+            document.getElementById('passwordError').classList.add('hidden');
+            
+            // Show loading state
+            signInBtn.disabled = true;
+            signInText.textContent = 'Signing In...';
+            loadingSpinner.classList.remove('hidden');
+            
+            // Simulate authentication delay
+            setTimeout(() => {
+                // Mock authentication logic
+                const validCredentials = [
+                    { email: 'admin@clienthub.com', password: 'admin123' },
+                    { email: 'client@techcorp.com', password: 'client456' }
+                ];
+                
+                const isValid = validCredentials.some(cred => 
+                    cred.email === email && cred.password === password
+                );
+                
+                if (isValid) {
+                    // Successful login
+                    signInText.textContent = 'Success!';
+                    setTimeout(() => {
+                        window.location.href = 'multi_project_dashboard.html';
+                    }, 500);
+                } else {
+                    // Invalid credentials
+                    document.getElementById('passwordError').textContent = 'Invalid email or password';
+                    document.getElementById('passwordError').classList.remove('hidden');
+                    
+                    // Reset button state
+                    signInBtn.disabled = false;
+                    signInText.textContent = 'Sign In';
+                    loadingSpinner.classList.add('hidden');
+                }
+            }, 1500);
+        });
+
+        // Real-time validation
+        document.getElementById('email').addEventListener('blur', function() {
+            const email = this.value;
+            const emailError = document.getElementById('emailError');
+            
+            if (email && !email.includes('@')) {
+                emailError.textContent = 'Please enter a valid email address';
+                emailError.classList.remove('hidden');
+            } else {
+                emailError.classList.add('hidden');
+            }
+        });
+
+        // Auto-fill demo credentials
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'd') {
+                e.preventDefault();
+                document.getElementById('email').value = 'admin@clienthub.com';
+                document.getElementById('password').value = 'admin123';
+            }
+        });
+    </script>
+</body>
+</html>

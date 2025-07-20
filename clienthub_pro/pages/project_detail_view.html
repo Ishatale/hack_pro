@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Platform - Project Details - ClientHub Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fclienthub3439back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background min-h-screen">
+    <!-- Global Header Navigation -->
+    <header class="bg-surface border-b border-border sticky top-0 z-50 shadow-elevation-1">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M14 16l-3-3 1.41-1.41L14 13.17l5.59-5.58L21 9l-7 7z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-semibold text-text-primary">ClientHub Pro</h1>
+                    </div>
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="multi_project_dashboard.html" class="text-text-secondary hover:text-text-primary px-1 pb-4 text-sm font-medium transition-smooth">Dashboard</a>
+                    <a href="project_detail_view.html" class="text-primary border-b-2 border-primary px-1 pb-4 text-sm font-medium">Projects</a>
+                    <a href="support_ticket_management.html" class="text-text-secondary hover:text-text-primary px-1 pb-4 text-sm font-medium transition-smooth">Support</a>
+                    <a href="file_deliverables_center.html" class="text-text-secondary hover:text-text-primary px-1 pb-4 text-sm font-medium transition-smooth">Files</a>
+                </nav>
+
+                <!-- User Menu -->
+                <div class="flex items-center space-x-4">
+                    <!-- Notifications -->
+                    <button class="relative p-2 text-text-secondary hover:text-text-primary transition-smooth">
+                        <i class="fas fa-bell text-lg"></i>
+                        <span class="absolute top-1 right-1 h-2 w-2 bg-error rounded-full"></span>
+                    </button>
+
+                    <!-- User Profile -->
+                    <div class="relative">
+                        <button class="flex items-center space-x-3 p-2 rounded-lg hover:bg-secondary-100 transition-smooth">
+                            <img class="h-8 w-8 rounded-full object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Avatar" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <span class="hidden md:block text-sm font-medium text-text-primary">John Mitchell</span>
+                            <i class="fas fa-chevron-down text-xs text-text-secondary"></i>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-text-secondary hover:text-text-primary">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Breadcrumb Navigation -->
+        <nav class="flex items-center space-x-2 text-sm text-text-secondary mb-6">
+            <a href="multi_project_dashboard.html" class="hover:text-text-primary transition-smooth">Dashboard</a>
+            <i class="fas fa-chevron-right text-xs"></i>
+            <a href="multi_project_dashboard.html" class="hover:text-text-primary transition-smooth">Projects</a>
+            <i class="fas fa-chevron-right text-xs"></i>
+            <span class="text-text-primary font-medium">E-Commerce Platform</span>
+        </nav>
+
+        <!-- Project Header -->
+        <div class="card p-6 mb-8">
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                <!-- Project Info -->
+                <div class="flex-1">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <h1 class="text-3xl font-semibold text-text-primary">E-Commerce Platform</h1>
+                        <span class="status-success">Active</span>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                        <div>
+                            <span class="text-text-secondary">Client:</span>
+                            <span class="text-text-primary font-medium ml-2">TechCorp Solutions</span>
+                        </div>
+                        <div>
+                            <span class="text-text-secondary">Project Manager:</span>
+                            <span class="text-text-primary font-medium ml-2">Sarah Johnson</span>
+                        </div>
+                        <div>
+                            <span class="text-text-secondary">Start Date:</span>
+                            <span class="text-text-primary font-medium ml-2">March 15, 2025</span>
+                        </div>
+                        <div>
+                            <span class="text-text-secondary">Current Phase:</span>
+                            <span class="text-text-primary font-medium ml-2">Testing</span>
+                        </div>
+                        <div>
+                            <span class="text-text-secondary">Next Milestone:</span>
+                            <span class="text-text-primary font-medium ml-2">UAT Completion</span>
+                        </div>
+                        <div>
+                            <span class="text-text-secondary">Deadline:</span>
+                            <span class="text-warning font-medium ml-2">December 15, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progress Overview -->
+                <div class="lg:w-80">
+                    <div class="text-center mb-4">
+                        <div class="text-3xl font-semibold text-text-primary mb-1">75%</div>
+                        <div class="text-text-secondary text-sm">Overall Progress</div>
+                    </div>
+                    
+                    <div class="w-full bg-secondary-200 rounded-full h-3 mb-4">
+                        <div class="bg-success h-3 rounded-full transition-all duration-300" style="width: 75%"></div>
+                    </div>
+                    
+                    <div class="flex justify-between text-sm">
+                        <span class="text-text-secondary">Started: Mar 15</span>
+                        <span class="text-text-secondary">Due: Dec 15</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="flex flex-wrap gap-3 mt-6 pt-6 border-t border-border">
+                <button class="btn-primary" onclick="window.location.href='support_ticket_management.html'">
+                    <i class="fas fa-plus mr-2"></i>
+                    Raise Ticket
+                </button>
+                <button class="btn-secondary" onclick="window.location.href='file_deliverables_center.html'">
+                    <i class="fas fa-download mr-2"></i>
+                    Download Files
+                </button>
+                <button class="btn-secondary">
+                    <i class="fas fa-share mr-2"></i>
+                    Share Project
+                </button>
+                <button class="btn-secondary">
+                    <i class="fas fa-print mr-2"></i>
+                    Export Report
+                </button>
+            </div>
+        </div>
+
+        <!-- Tabbed Interface -->
+        <div class="card">
+            <!-- Tab Navigation -->
+            <div class="border-b border-border">
+                <nav class="flex space-x-8 px-6" id="tabNavigation">
+                    <button class="tab-button active py-4 px-1 border-b-2 border-primary text-primary font-medium text-sm" data-tab="overview">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        Overview
+                    </button>
+                    <button class="tab-button py-4 px-1 border-b-2 border-transparent text-text-secondary hover:text-text-primary font-medium text-sm transition-smooth" data-tab="timeline">
+                        <i class="fas fa-clock mr-2"></i>
+                        Timeline
+                    </button>
+                    <button class="tab-button py-4 px-1 border-b-2 border-transparent text-text-secondary hover:text-text-primary font-medium text-sm transition-smooth" data-tab="deliverables">
+                        <i class="fas fa-folder mr-2"></i>
+                        Deliverables
+                    </button>
+                    <button class="tab-button py-4 px-1 border-b-2 border-transparent text-text-secondary hover:text-text-primary font-medium text-sm transition-smooth" data-tab="tickets">
+                        <i class="fas fa-ticket-alt mr-2"></i>
+                        Support Tickets
+                        <span class="ml-2 bg-warning-100 text-warning-600 px-2 py-1 rounded-full text-xs">3</span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="p-6">
+                <!-- Overview Tab -->
+                <div id="overview-tab" class="tab-content">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Left Column -->
+                        <div class="space-y-6">
+                            <!-- Project Summary -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-4">Project Summary</h3>
+                                <div class="bg-secondary-100 rounded-lg p-4">
+                                    <p class="text-text-secondary text-sm leading-relaxed">
+                                        Comprehensive e-commerce platform development including custom shopping cart, payment gateway integration, inventory management system, and admin dashboard. The project encompasses both frontend user experience and backend infrastructure with scalable architecture designed for high-traffic scenarios.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Key Metrics -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-4">Key Metrics</h3>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-primary-100 rounded-lg p-4 text-center">
+                                        <div class="text-2xl font-semibold text-primary mb-1">12</div>
+                                        <div class="text-text-secondary text-sm">Milestones</div>
+                                    </div>
+                                    <div class="bg-success-100 rounded-lg p-4 text-center">
+                                        <div class="text-2xl font-semibold text-success mb-1">9</div>
+                                        <div class="text-text-secondary text-sm">Completed</div>
+                                    </div>
+                                    <div class="bg-warning-100 rounded-lg p-4 text-center">
+                                        <div class="text-2xl font-semibold text-warning mb-1">24</div>
+                                        <div class="text-text-secondary text-sm">Deliverables</div>
+                                    </div>
+                                    <div class="bg-accent-100 rounded-lg p-4 text-center">
+                                        <div class="text-2xl font-semibold text-accent mb-1">156</div>
+                                        <div class="text-text-secondary text-sm">Hours Logged</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Team Members -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-4">Team Members</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-center space-x-3 p-3 bg-secondary-100 rounded-lg">
+                                        <img class="h-10 w-10 rounded-full object-cover" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah Johnson" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">Sarah Johnson</div>
+                                            <div class="text-text-secondary text-sm">Project Manager</div>
+                                        </div>
+                                        <span class="h-3 w-3 bg-success rounded-full"></span>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-3 p-3 bg-secondary-100 rounded-lg">
+                                        <img class="h-10 w-10 rounded-full object-cover" src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Michael Chen" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">Michael Chen</div>
+                                            <div class="text-text-secondary text-sm">Lead Developer</div>
+                                        </div>
+                                        <span class="h-3 w-3 bg-success rounded-full"></span>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-3 p-3 bg-secondary-100 rounded-lg">
+                                        <img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Emily Rodriguez" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">Emily Rodriguez</div>
+                                            <div class="text-text-secondary text-sm">UI/UX Designer</div>
+                                        </div>
+                                        <span class="h-3 w-3 bg-warning rounded-full"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="space-y-6">
+                            <!-- Milestone Progress -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-4">Milestone Progress</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <div class="h-8 w-8 bg-success rounded-full flex items-center justify-center">
+                                                <i class="fas fa-check text-white text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">Requirements Analysis</div>
+                                            <div class="text-text-secondary text-sm">Completed on April 2, 2025</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <div class="h-8 w-8 bg-success rounded-full flex items-center justify-center">
+                                                <i class="fas fa-check text-white text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">System Design</div>
+                                            <div class="text-text-secondary text-sm">Completed on May 15, 2025</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <div class="h-8 w-8 bg-success rounded-full flex items-center justify-center">
+                                                <i class="fas fa-check text-white text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">Frontend Development</div>
+                                            <div class="text-text-secondary text-sm">Completed on August 30, 2025</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <div class="h-8 w-8 bg-warning rounded-full flex items-center justify-center">
+                                                <i class="fas fa-clock text-white text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">Testing & QA</div>
+                                            <div class="text-text-secondary text-sm">In Progress - Due Nov 30, 2025</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-4">
+                                        <div class="flex-shrink-0">
+                                            <div class="h-8 w-8 bg-secondary-300 rounded-full flex items-center justify-center">
+                                                <i class="fas fa-circle text-white text-sm"></i>
+                                            </div>
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="font-medium text-text-primary">UAT & Deployment</div>
+                                            <div class="text-text-secondary text-sm">Scheduled for Dec 15, 2025</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Activity -->
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-4">Recent Activity</h3>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3 p-3 bg-secondary-100 rounded-lg">
+                                        <div class="h-2 w-2 bg-success rounded-full mt-2 flex-shrink-0"></div>
+                                        <div>
+                                            <p class="text-sm text-text-primary">Test cases document uploaded</p>
+                                            <p class="text-xs text-text-secondary">2 hours ago by Sarah Johnson</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3 p-3 bg-secondary-100 rounded-lg">
+                                        <div class="h-2 w-2 bg-warning rounded-full mt-2 flex-shrink-0"></div>
+                                        <div>
+                                            <p class="text-sm text-text-primary">Payment gateway integration completed</p>
+                                            <p class="text-xs text-text-secondary">1 day ago by Michael Chen</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3 p-3 bg-secondary-100 rounded-lg">
+                                        <div class="h-2 w-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <div>
+                                            <p class="text-sm text-text-primary">UI mockups approved by client</p>
+                                            <p class="text-xs text-text-secondary">2 days ago by Emily Rodriguez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Tab -->
+                <div id="timeline-tab" class="tab-content hidden">
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold text-text-primary">Project Timeline</h3>
+                            <div class="flex space-x-3">
+                                <button class="btn-secondary text-sm">
+                                    <i class="fas fa-filter mr-2"></i>
+                                    Filter
+                                </button>
+                                <button class="btn-secondary text-sm">
+                                    <i class="fas fa-download mr-2"></i>
+                                    Export
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Entries -->
+                        <div class="space-y-4">
+                            <!-- Timeline Entry 1 -->
+                            <div class="timeline-entry bg-surface border border-border rounded-lg p-4 hover:shadow-elevation-1 transition-smooth">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="h-10 w-10 bg-success-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-upload text-success"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-medium text-text-primary">Test Cases Documentation Uploaded</h4>
+                                            <span class="text-text-secondary text-sm">Nov 26, 2025 - 3:45 PM</span>
+                                        </div>
+                                        <p class="text-text-secondary text-sm mb-3">
+                                            Comprehensive test cases document covering all user scenarios and edge cases for the e-commerce platform. Includes automated test scripts and manual testing procedures.
+                                        </p>
+                                        <div class="flex items-center space-x-4">
+                                            <span class="text-text-secondary text-sm">
+                                                <i class="fas fa-user mr-1"></i>
+                                                Sarah Johnson
+                                            </span>
+                                            <span class="status-success">Deliverable</span>
+                                            <button class="text-primary text-sm hover:underline">
+                                                <i class="fas fa-chevron-down mr-1"></i>
+                                                View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Entry 2 -->
+                            <div class="timeline-entry bg-surface border border-border rounded-lg p-4 hover:shadow-elevation-1 transition-smooth">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="h-10 w-10 bg-primary-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-code text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-medium text-text-primary">Payment Gateway Integration Completed</h4>
+                                            <span class="text-text-secondary text-sm">Nov 25, 2025 - 11:20 AM</span>
+                                        </div>
+                                        <p class="text-text-secondary text-sm mb-3">
+                                            Successfully integrated Stripe and PayPal payment gateways with comprehensive error handling and security measures. All payment flows tested and validated.
+                                        </p>
+                                        <div class="flex items-center space-x-4">
+                                            <span class="text-text-secondary text-sm">
+                                                <i class="fas fa-user mr-1"></i>
+                                                Michael Chen
+                                            </span>
+                                            <span class="status-success">Milestone</span>
+                                            <button class="text-primary text-sm hover:underline">
+                                                <i class="fas fa-chevron-down mr-1"></i>
+                                                View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Entry 3 -->
+                            <div class="timeline-entry bg-surface border border-border rounded-lg p-4 hover:shadow-elevation-1 transition-smooth">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="h-10 w-10 bg-warning-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-exclamation-triangle text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-medium text-text-primary">Performance Issue Identified</h4>
+                                            <span class="text-text-secondary text-sm">Nov 24, 2025 - 2:15 PM</span>
+                                        </div>
+                                        <p class="text-text-secondary text-sm mb-3">
+                                            Database query optimization needed for product search functionality. Performance degradation observed with large catalog sizes. Investigation and fix in progress.
+                                        </p>
+                                        <div class="flex items-center space-x-4">
+                                            <span class="text-text-secondary text-sm">
+                                                <i class="fas fa-user mr-1"></i>
+                                                Michael Chen
+                                            </span>
+                                            <span class="status-warning">Issue</span>
+                                            <button class="text-primary text-sm hover:underline">
+                                                <i class="fas fa-chevron-down mr-1"></i>
+                                                View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Timeline Entry 4 -->
+                            <div class="timeline-entry bg-surface border border-border rounded-lg p-4 hover:shadow-elevation-1 transition-smooth">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0">
+                                        <div class="h-10 w-10 bg-accent-100 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-check text-accent"></i>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-2">
+                                            <h4 class="font-medium text-text-primary">UI Mockups Approved by Client</h4>
+                                            <span class="text-text-secondary text-sm">Nov 23, 2025 - 4:30 PM</span>
+                                        </div>
+                                        <p class="text-text-secondary text-sm mb-3">
+                                            Final UI mockups for the shopping cart and checkout process have been reviewed and approved by the client. Ready to proceed with implementation.
+                                        </p>
+                                        <div class="flex items-center space-x-4">
+                                            <span class="text-text-secondary text-sm">
+                                                <i class="fas fa-user mr-1"></i>
+                                                Emily Rodriguez
+                                            </span>
+                                            <span class="status-success">Approval</span>
+                                            <button class="text-primary text-sm hover:underline">
+                                                <i class="fas fa-chevron-down mr-1"></i>
+                                                View Details
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Load More Button -->
+                        <div class="text-center mt-8">
+                            <button class="btn-secondary">
+                                <i class="fas fa-plus mr-2"></i>
+                                Load More Entries
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deliverables Tab -->
+                <div id="deliverables-tab" class="tab-content hidden">
+                    <div class="space-y-6">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            <h3 class="text-lg font-semibold text-text-primary">Project Deliverables</h3>
+                            <div class="flex space-x-3">
+                                <button class="btn-secondary text-sm">
+                                    <i class="fas fa-upload mr-2"></i>
+                                    Upload File
+                                </button>
+                                <button class="btn-secondary text-sm">
+                                    <i class="fas fa-download mr-2"></i>
+                                    Download All
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- File Categories -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Documentation Folder -->
+                            <div class="card p-4 hover:shadow-elevation-2 transition-smooth">
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <div class="h-10 w-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-folder text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-text-primary">Documentation</h4>
+                                        <p class="text-text-secondary text-sm">12 files</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-file-pdf text-error text-sm"></i>
+                                            <span class="text-text-primary text-sm">Requirements_v2.1.pdf</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v2.1</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-file-word text-primary text-sm"></i>
+                                            <span class="text-text-primary text-sm">Technical_Specs.docx</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v1.3</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-file-alt text-secondary text-sm"></i>
+                                            <span class="text-text-primary text-sm">Test_Cases.pdf</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="status-success text-xs">New</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full mt-3 text-primary text-sm hover:underline">
+                                    View All Files
+                                </button>
+                            </div>
+
+                            <!-- Design Assets Folder -->
+                            <div class="card p-4 hover:shadow-elevation-2 transition-smooth">
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <div class="h-10 w-10 bg-accent-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-palette text-accent"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-text-primary">Design Assets</h4>
+                                        <p class="text-text-secondary text-sm">8 files</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-image text-success text-sm"></i>
+                                            <span class="text-text-primary text-sm">UI_Mockups.fig</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v3.0</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-file-image text-warning text-sm"></i>
+                                            <span class="text-text-primary text-sm">Logo_Assets.zip</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v1.0</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-file-code text-accent text-sm"></i>
+                                            <span class="text-text-primary text-sm">Style_Guide.pdf</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v2.0</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full mt-3 text-accent text-sm hover:underline">
+                                    View All Files
+                                </button>
+                            </div>
+
+                            <!-- Source Code Folder -->
+                            <div class="card p-4 hover:shadow-elevation-2 transition-smooth">
+                                <div class="flex items-center space-x-3 mb-4">
+                                    <div class="h-10 w-10 bg-success-100 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-code text-success"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-text-primary">Source Code</h4>
+                                        <p class="text-text-secondary text-sm">6 files</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-file-archive text-secondary text-sm"></i>
+                                            <span class="text-text-primary text-sm">Frontend_Build.zip</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v1.5</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-database text-primary text-sm"></i>
+                                            <span class="text-text-primary text-sm">Database_Schema.sql</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="text-text-secondary text-xs">v2.1</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center justify-between p-2 hover:bg-secondary-100 rounded">
+                                        <div class="flex items-center space-x-2">
+                                            <i class="fas fa-cog text-warning text-sm"></i>
+                                            <span class="text-text-primary text-sm">API_Documentation.json</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <span class="status-success text-xs">New</span>
+                                            <button class="text-primary hover:text-primary-700">
+                                                <i class="fas fa-download text-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button class="w-full mt-3 text-success text-sm hover:underline">
+                                    View All Files
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Recent Uploads -->
+                        <div>
+                            <h4 class="font-medium text-text-primary mb-4">Recent Uploads</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-4 bg-secondary-100 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-file-pdf text-error text-lg"></i>
+                                        <div>
+                                            <div class="font-medium text-text-primary">Test_Cases_Final.pdf</div>
+                                            <div class="text-text-secondary text-sm">Uploaded 2 hours ago by Sarah Johnson</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-text-secondary text-sm">2.4 MB</span>
+                                        <button class="btn-primary text-sm py-2 px-4">Download</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-4 bg-secondary-100 rounded-lg">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-file-code text-accent text-lg"></i>
+                                        <div>
+                                            <div class="font-medium text-text-primary">API_Integration_Guide.md</div>
+                                            <div class="text-text-secondary text-sm">Uploaded 1 day ago by Michael Chen</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-text-secondary text-sm">156 KB</span>
+                                        <button class="btn-primary text-sm py-2 px-4">Download</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Tickets Tab -->
+                <div id="tickets-tab" class="tab-content hidden">
+                    <div class="space-y-6">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                            <div class="flex items-center space-x-4">
+                                <h3 class="text-lg font-semibold text-text-primary">Support Tickets</h3>
+                                <span class="status-warning">3 Open</span>
+                            </div>
+                            <button class="btn-primary" onclick="window.location.href='support_ticket_management.html'">
+                                <i class="fas fa-plus mr-2"></i>
+                                Raise New Ticket
+                            </button>
+                        </div>
+
+                        <!-- Filters -->
+                        <div class="flex flex-wrap gap-3">
+                            <button class="px-4 py-2 bg-primary text-white rounded-lg text-sm">All Tickets</button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm hover:bg-secondary-100 transition-smooth">Open</button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm hover:bg-secondary-100 transition-smooth">In Progress</button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm hover:bg-secondary-100 transition-smooth">Resolved</button>
+                            <button class="px-4 py-2 border border-border rounded-lg text-sm hover:bg-secondary-100 transition-smooth">High Priority</button>
+                        </div>
+
+                        <!-- Tickets List -->
+                        <div class="space-y-4">
+                            <!-- Ticket 1 -->
+                            <div class="card p-4 hover:shadow-elevation-2 transition-smooth">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-text-secondary text-sm font-mono">#TCK-001</span>
+                                        <span class="status-error">High Priority</span>
+                                        <span class="status-warning">Open</span>
+                                    </div>
+                                    <span class="text-text-secondary text-sm">Nov 26, 2025</span>
+                                </div>
+                                
+                                <h4 class="font-medium text-text-primary mb-2">Payment Gateway Error on Checkout</h4>
+                                <p class="text-text-secondary text-sm mb-4">
+                                    Users are experiencing intermittent errors when processing payments through the Stripe gateway. Error occurs approximately 15% of the time during peak hours.
+                                </p>
+                                
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                        <span><i class="fas fa-tag mr-1"></i>Bug Report</span>
+                                        <span><i class="fas fa-user mr-1"></i>Assigned to Michael Chen</span>
+                                        <span><i class="fas fa-clock mr-1"></i>2 hours ago</span>
+                                    </div>
+                                    <button class="text-primary hover:underline text-sm">View Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Ticket 2 -->
+                            <div class="card p-4 hover:shadow-elevation-2 transition-smooth">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-text-secondary text-sm font-mono">#TCK-002</span>
+                                        <span class="status-warning">Medium Priority</span>
+                                        <span class="status-warning">In Progress</span>
+                                    </div>
+                                    <span class="text-text-secondary text-sm">Nov 25, 2025</span>
+                                </div>
+                                
+                                <h4 class="font-medium text-text-primary mb-2">Mobile Responsive Issues on Product Pages</h4>
+                                <p class="text-text-secondary text-sm mb-4">
+                                    Product images are not displaying correctly on mobile devices with screen sizes below 375px. Layout breaks and images overlap with text content.
+                                </p>
+                                
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                        <span><i class="fas fa-tag mr-1"></i>UI/UX</span>
+                                        <span><i class="fas fa-user mr-1"></i>Assigned to Emily Rodriguez</span>
+                                        <span><i class="fas fa-clock mr-1"></i>1 day ago</span>
+                                    </div>
+                                    <button class="text-primary hover:underline text-sm">View Details</button>
+                                </div>
+                            </div>
+
+                            <!-- Ticket 3 -->
+                            <div class="card p-4 hover:shadow-elevation-2 transition-smooth">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-text-secondary text-sm font-mono">#TCK-003</span>
+                                        <span class="status-success">Low Priority</span>
+                                        <span class="status-success">Resolved</span>
+                                    </div>
+                                    <span class="text-text-secondary text-sm">Nov 24, 2025</span>
+                                </div>
+                                
+                                <h4 class="font-medium text-text-primary mb-2">Feature Request: Advanced Search Filters</h4>
+                                <p class="text-text-secondary text-sm mb-4">
+                                    Request to add advanced filtering options for product search including price range, brand, ratings, and availability status.
+                                </p>
+                                
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                        <span><i class="fas fa-tag mr-1"></i>Feature Request</span>
+                                        <span><i class="fas fa-user mr-1"></i>Resolved by Sarah Johnson</span>
+                                        <span><i class="fas fa-clock mr-1"></i>2 days ago</span>
+                                    </div>
+                                    <button class="text-primary hover:underline text-sm">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Load More Button -->
+                        <div class="text-center">
+                            <button class="btn-secondary">
+                                <i class="fas fa-plus mr-2"></i>
+                                Load More Tickets
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-border mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="text-center text-text-secondary text-sm">
+                <p>&copy; 2025 ClientHub Pro. All Rights Reserved.</p>
+                <p class="mt-2">Secure IT Service Management Platform</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => {
+                        btn.classList.remove('active', 'border-primary', 'text-primary');
+                        btn.classList.add('border-transparent', 'text-text-secondary');
+                    });
+
+                    // Add active class to clicked button
+                    this.classList.add('active', 'border-primary', 'text-primary');
+                    this.classList.remove('border-transparent', 'text-text-secondary');
+
+                    // Hide all tab contents
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+
+                    // Show target tab content
+                    document.getElementById(targetTab + '-tab').classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
